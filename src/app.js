@@ -38,6 +38,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "8e7395d4f989412fff4eb060663c2eeb";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Guimarães,pt&appid=${apiKey}&units=metric`;
+let city = "Guimarães";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},pt&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
